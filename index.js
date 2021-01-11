@@ -18,6 +18,10 @@ app.get('/', async (_, res) => {
   }
 });
 
+app.get('/teste', async (_, res) => {
+    res.status(200).send("HELLO WORLD!");
+});
+
 app.get('/:file', async (req, res) => {
   try {
     const { file } = req.params;
