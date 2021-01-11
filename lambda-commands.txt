@@ -1,0 +1,3 @@
+// criando e Alterando a versão do aliás
+aws lambda create-alias --function-name my-function --name alias-name --function-version version-number --description " "
+aws lambda update-alias --function-name my-function --name alias-name --function-version version-number 
