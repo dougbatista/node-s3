@@ -1,0 +1,14 @@
+// instalar git
+sudo apt-get update
+sudo apt-get install git
+
+//instalar node
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+source ~/.bashrc
+nvm install 12.16.3 
+
+//configurar porta da aplicação para acesso a internet
+sudo iptables -t nat -L
+sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 8000
+sudo iptables -t nat -L

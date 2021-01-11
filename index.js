@@ -38,8 +38,8 @@ app.listen(port, () => {
 
 function getFile() {
   const params = {
-    Bucket: "source-buckket",
-    Key: "bot.png"
+    Bucket: "bucket-name",
+    Key: "file-name"
   };
 
   return new Promise((resolve, reject) => {
@@ -52,9 +52,8 @@ function getFile() {
 }
 
 function getSpecificFile(file) {
-
   const params = {
-    Bucket: "source-buckket",
+    Bucket: "bucket-name",
     Key: file
   };
 
